@@ -27,7 +27,7 @@
 - Surprise  
 - Disgust  
 
-![](./img/Trump.png){: width="200" height="200"}  
+![](./img/Trump.png){: width="100" height="100"}  
 **<center>비디오 감정 분석 결과</center>**  
 
 # Fun Facts  
