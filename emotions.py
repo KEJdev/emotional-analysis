@@ -9,16 +9,13 @@ from faces import FaceDetector
 from sklearn import svm
 from sklearn.externals import joblib
 
-# 감지 모델을 로드 할 수 없음을 나타내는 예외 코드 
+# 모델을 로드 할 수 없음을 나타내는 예외 코드 
 class InvalidModelException(Exception):
-  
     pass
-
-# 얼굴 이미지의 감정 탐기지를 구현하는 클래스 
+  
 class EmotionsDetector:
     def __init__(self):
     
-# SVM은 감정을 탐지하기 위한 모델로 사용 됨 
         self._clf = svm.SVC(kernel='rbf', gamma=0.001, C=10,
                             decision_function_shape='ovr',
                             probability=True, class_weight='balanced')
@@ -54,11 +51,7 @@ class EmotionsDetector:
         self._clf = clf
         return True
 
-# 선형 SVM 을 사용해서 예측 
-
     def _relevantFeatures(self, gaborResponses, facialLandmarks):
-  
-# 모든 얼굴 표식의 위치에서 32개의 응답을 받음
         points = np.array(facialLandmarks)
 
         try:
