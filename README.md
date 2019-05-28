@@ -23,7 +23,7 @@
 - Surprise  
 - Disgust  
 
-![](./img/Trump.png)
+![](./img/Trump.png)  
 **<center>비디오 감정 분석 결과</center>**  
 
 # Fun Facts  
@@ -32,7 +32,8 @@
 
 연설 내용 중 비슷한 이야기 하고 있는 두 부분을 비디오로 담아 감정 분석을 했는데, 트럼프 대통령의 경우 혐오감, 분노 등의 감정 카운트가 많이 되었으며, 오바마 대통령의 경우 행복, 놀라움 등의 감정 카운트가 되었습니다.
 
-이 결과는 여러가지 가정을 세울 수 있는데, 자세한 이야기는 블로그에서 다룰 예정입니다.   
+이 결과는 여러가지 가정을 세울 수 있는데,   
+이야기는 더 길어 질 것 같으므로 자세한 이야기는 블로그에서 다룰 예정입니다.   
 
 # Details on the Implementation
 얼굴 검출은 Cascade Detector(Viola-Jones algorithm) 을 기반으로 하며, 감정 감지는 RBF 커널을 사용하는 SVM(Support Vector Machine)을 기반으로 합니다.
