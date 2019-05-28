@@ -7,8 +7,7 @@ from data import FaceData
 class FaceDetector:
     _detector = None
     _predictor = None
-  
-# 주어진 이미지에서 얼굴을 자동으로 탐지 
+
     def detect(self, image, downSampleRatio = None):
         if FaceDetector._detector is None or FaceDetector._predictor is None:
             FaceDetector._detector = dlib.get_frontal_face_detector()
