@@ -38,9 +38,3 @@
 # Usage
 tsst.py 는 비디오를 탐지 및 테스트 하는데 사용됩니다.  
 실제 사용하려면 코드 중간에 있는 경로를 수정하여 사용해야합니다.  
-
-# License
-Some of the codes follow MIT License.  
-The code is licensed under MIT license and can be used as desired. Only the trained models (the files in model folder) can not be used for commercial purposes due to the limitations on the licenses of the datasets used to train them.
-
-If you want to use the code for commercial purposes, you must train your own model from your own image datasets labelled with the prototypic emotions.
